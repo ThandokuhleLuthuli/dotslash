@@ -1,0 +1,106 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.product-details {
+    max-width: 355px;
+    width: 100%;
+    background-color: $reqay-white;
+    border: 6px solid $reway-blue;
+    margin-bottom: 15px;
+
+    &_container {
+        padding: 22px;
+    }
+    
+    &_title {
+        font-family: $suez;
+        font-weight: 400;
+        font-size: $font-size20;
+        line-height: 26px;
+        text-transform: uppercase;
+
+    }
+
+    &_subtitle {
+        font-family: $pt;
+        font-size: $font-size12;
+        line-height: 16px;
+        color: $reway-light-grey;
+        display: block;
+        img {
+            display: inline-block;
+            margin-right: 6px;
+        }
+    }
+    &_subtitletwo {
+        font-family: $pt;
+        font-size: $font-size12;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $reway-light-grey;
+    }
+
+    &_feature {
+        &-text { 
+            font-family: $pt;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 21px;
+            &--bold {
+                font-weight: $bold;
+                padding-left: 58px;
+                span {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #91613D;
+                    border: 2px solid $black;
+                    border-radius: 25px;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+    &_list {
+        padding-left: 15px;
+    }
+
+    &_list-item {
+        font-size: $font-size14;
+        font-family: $pt;
+        line-height:18.12px;
+        color: $reway-gray
+    
+    }
+    
+    &_footer {
+        display: flex;
+        justify-content: end;
+    }
+
+    &_discount {
+        font-family: $pt;
+        text-transform: uppercase;
+        padding: 6px 11px 4px 9px;
+        background-color: $reway-blue;
+        color: $reqay-white;
+        right: 0;
+        border-radius: 4px;
+        margin-top: 12px;
+        margin-right: 12px;
+        height: 35px;
+    }
+
+    &_price {
+        font-family: $suez;
+        color: $black;
+        font-size: $font-size20;
+        &-old {
+            display: block;
+            color: $reway-gray;
+            text-decoration: line-through;
+            font-size: $font-size14;
+        }
+    }
+
+}

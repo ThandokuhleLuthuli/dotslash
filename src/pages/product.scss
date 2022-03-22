@@ -1,0 +1,24 @@
+@import '../assets/styles/variables/variables.scss';
+
+.product {
+    &_advert {
+        display: block;
+       width: 307px;
+       height: 616px; 
+    }
+
+    &_card-row {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+
+    &_column {
+        .product-details,
+        .select-box {
+            float: right;
+           
+        }
+    }
+}

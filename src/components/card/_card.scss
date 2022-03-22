@@ -1,0 +1,106 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.card {
+    width: 246px;
+    overflow-x: hidden;
+    // margin-right: 40px;
+    margin-bottom: 47px;
+
+    &:hover {
+        // border: 4px solid $reway-blue;
+    }
+    &_details {
+        padding: 12px;
+        &:hover {
+            background-color: $reway-light-grey;
+        }
+    }
+    &_title {
+        font-family: $suez;
+        font-size: 18px;
+        line-height: 24px;
+        text-transform: uppercase;
+        &:hover {
+            color: $reway-blue;
+        }
+    }
+    &_stock {
+        background: rgba(0, 0, 0, 0.56);
+        border-radius: 4px;
+        color: $reqay-white;
+        font-family: $pt;
+        text-transform: uppercase;
+        padding: 6px 11px 4px 9px;
+        position: absolute;
+        bottom: 45%;
+        margin-left: 9px;
+    }
+    &_discount {
+        font-family: $pt;
+        text-transform: uppercase;
+        padding: 6px 11px 4px 9px;
+        position: absolute;
+        top:0;
+        background-color: $reway-blue;
+        color: $reqay-white;
+        right: 0;
+        border-radius: 4px;
+        margin-top: 12px;
+        margin-right: 12px;
+    }
+
+    &_subtitle {
+        font-family: $pt;
+        font-weight: $bold;
+        font-size: $font-size16;
+        line-height: 21px;
+        color: $reway-gray;
+        img{
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
+    &_price {
+        font-family: $suez;
+        color: $reway-blue;
+    }
+    &_footer {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &_button { 
+        font-weight: $bold;
+        font-size: $font-size14;
+        line-height: 18px;
+        color: $reway-gray;
+        text-decoration: none; 
+        
+        &:hover {
+            color: $reway-blue
+        }
+
+        &::after {
+       content: "";
+            background-image: url('../../assets/images/arrow-rightarrow.png');
+            background-repeat: no-repeat;
+            width: 13px;
+            height: 13px;
+            display: inline-block;
+            background-position: center;
+            margin-left: 16px;
+        }
+    }
+
+    &--no-discount {
+        .card_discount {
+            display: none;
+        }
+    }
+    &--no-stock {
+        .card_stock {
+            display: none;
+        }
+    }
+
+}

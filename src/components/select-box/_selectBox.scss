@@ -1,0 +1,36 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.select-box {
+    max-width: 355px;
+    width: 100%;
+    background-color: $light-grey;
+    &_container {
+        padding: 24px 24px 36px 24px;
+    }
+    &_form {
+        &-label {
+            font-family: $pt;
+            font-weight: $bold;
+            display: block;
+            font-size: $font-size14;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: $reway-light-grey;
+        }
+        .button {
+            margin: 0 auto;
+        }
+    }
+    &_select {
+        display: block;
+        width: 320px;
+        height: 34px;
+        text-transform: uppercase;
+        font-family: $pt;
+        background-color: $reqay-white;
+        border: none;
+        color: $reway-gray;
+        margin-top: 5px;
+        margin-bottom: 28px;
+    }
+}

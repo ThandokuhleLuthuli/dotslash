@@ -1,0 +1,32 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.nav {
+    align-items: center;
+    
+    &_link {
+        font-family: $suez;
+        font-size: $font-size17;
+        line-height: 22px;
+        text-transform: uppercase;
+        padding-right: 30px;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+    &_icon {
+        padding-right: 30px;
+    }
+
+    &_button {
+        
+        font-family: $suez;
+        text-transform: uppercase;
+        padding-right: 33px;
+        a{
+            color: $reway-blue;
+            text-decoration: none;
+        }
+    }
+}

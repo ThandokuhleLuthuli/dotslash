@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.section-title {
+        width: 100%;
+        background-color: $reqay-white;
+        display: flex;
+
+        &_heading {
+            font-family: $suez;
+            text-transform: uppercase;
+            font-size: $font-size20;
+
+            span {
+                color: $reway-blue;
+            }
+        }
+        hr {
+            background-color: $reway-gray;
+            display: block;
+            border: 0;
+            border-radius: 2px;
+            height: 2px;
+            width: 90%;
+        }
+}

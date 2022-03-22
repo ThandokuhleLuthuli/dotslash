@@ -1,0 +1,41 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.button {
+    font-family: $suez;
+    font-style: normal;
+    font-weight: $regular;
+    text-transform: uppercase;
+    border: none;
+    display: block;
+    border-radius: 4px;
+    
+    &--primary {
+        background-color: $reway-blue;
+        color: $reqay-white;
+    }
+
+    &--secondary {
+        background-color: $reqay-white;
+        color: $reway-blue;
+    }
+    &--small {
+        padding: 11px 7px 11px 7px;
+    }
+    &--medium {
+        padding: 18px 46px 18px 46px;
+    }
+    &--large {
+     padding: 23px 23px 23px 38px;
+     font-size: $font-size30;
+    }
+    &--transparent {
+        border: 3px solid $reqay-white;
+        background-color: rgba(255,255,255,0);
+        color: $reqay-white;
+    }
+    &--transparent-blue {
+        color: $reway-blue;
+        background-color: rgba(255,255,255,0);
+        border: 3px solid $reway-blue;
+    }
+}

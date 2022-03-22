@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.breadcrumbs {
+    &_container {
+        display: flex;
+        .breadcrumb {
+            list-style: none;
+            color: $reway-blue;
+           
+            
+            &::after {
+                content: " ";
+                background-image: url('../../assets/images/chevron-right.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 8px;
+
+            }
+
+            &:last-child {
+                color:$light-grey;
+                &::after {
+                    content: "";
+                    background-image: none;
+                }
+            }
+            &_link {
+                padding-left: 13px;
+                padding-right: 13px;
+                
+                &:active,
+                &:visited {
+                    text-decoration: none;
+                    color: $reway-blue
+                }
+            }
+        }
+    }
+}

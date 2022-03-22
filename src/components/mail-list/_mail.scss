@@ -1,0 +1,61 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.mail-list {
+    background-color: $reway-blue;
+    max-width: 356px;
+    width: 100%;
+    margin-top: 47px;
+
+    &-none {
+        display: none;
+    }
+
+    &_container {
+        padding: 18px 24px 18px 24px;
+    }
+
+    &_image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &_title {
+        font-family: $suez;
+        color: $reqay-white;
+        font-size: $font-size20;
+        text-align: center;
+        padding-top: 14px;
+    }
+
+    &_form {
+        // display: flex;
+        // flex-direction: column;
+        .button {
+            margin: 0 auto;
+        }
+    }
+    &_form-label {
+        color: $reqay-white;
+        text-transform: uppercase;
+        font-size: $font-size14;
+    }
+    &_form-input{
+        display: block;
+        border-radius: 2px;
+        width: 298px;
+        height: 34px;
+        margin-top: 5px;
+        margin-bottom: 14px;
+        color: $reway-light-grey;
+        text-transform: uppercase;
+        font-size: $font-size14;
+    }
+    .close {
+        float: right;
+        display: inline-block;
+        margin-top: 12px;
+        margin-right: 12px;
+        cursor: pointer;
+    }
+
+}

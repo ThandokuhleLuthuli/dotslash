@@ -1,0 +1,39 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.footer {
+    background-color: $grey;
+    padding-top: 47px;
+    
+    &_container {
+        padding-top: 39px;
+        padding-bottom: 66px;
+    }
+   
+    &_heading {
+        font-family: $suez;
+        font-size: $font-size20;
+        line-height: 26px;
+        color: $reqay-white;
+
+    }
+    &_list {
+        padding-left: 0;
+        &-item {
+            font-family: $pt;
+            color: $reqay-white;
+            list-style: none;
+            line-height: 21px;
+            opacity: 0.5;
+        }
+        &_icon {
+            display: flex;
+        }
+        &-icon {
+            list-style: none;
+            &:first-child {
+                padding-right: 40px;
+            }
+        }
+    }
+
+}

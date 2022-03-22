@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables/variables.scss';
+
+.banner {
+    max-width: 990px;
+    background-image: url('../../assets/images/Bannermountains.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 46px;
+    margin-bottom: 50px;
+
+    &_container {
+        display: flex;
+        padding: 12px 0 12px 55px;
+    }
+
+    &_title {
+        color: $reqay-white;
+        font-family: $suez;
+        font-size: $font-size30;
+        width: 50%;
+    }
+
+    &_text {
+        color: $reqay-white;
+        display: block;
+        font-size: $font-size20;
+
+    }
+
+}
